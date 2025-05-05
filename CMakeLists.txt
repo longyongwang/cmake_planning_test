@@ -5,6 +5,7 @@ project(planning
     HOMEPAGE_URL "https://github.com/longyongwang/cmake_planning_test"
 )
 set(CMAKE_CXX_STANDARD 17)
+enable_testing()
 
 #设置变量
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
@@ -23,3 +24,4 @@ if(TARGET Eigen3::Eigen)
 endif()
 #添加子目录
 add_subdirectory(src)
+add_subdirectory(test/map_test)
